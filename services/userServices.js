@@ -24,7 +24,7 @@ async function loginUser(loginData) {
     let loggingUser = await User.findOne({ email: loginData.email });
 
     if (!loggingUser) {
-        return { message: "user not found" }
+        return { message: "User not found" }
     } else {
         let isMatch = await bcrypt.compare(loginData.password, loggingUser.password);
 
