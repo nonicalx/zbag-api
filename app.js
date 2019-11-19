@@ -27,7 +27,7 @@ mongoose.connect('mongodb://localhost/playground', { useNewUrlParser: true, useU
 
 
 //port
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 
 
