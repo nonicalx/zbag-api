@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/user', user)
 
 //Connecting to mongodb
-mongoose.connect('mongodb://localhost/playground', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://nonix:Qwerty12345%@cluster0-zhbyh.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to Mongodb'))
     .catch(err => console.log('Error: ', err))
 
